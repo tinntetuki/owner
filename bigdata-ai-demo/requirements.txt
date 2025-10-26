@@ -1,123 +1,146 @@
-# Python大数据和AI/ML示例项目依赖
+# 大数据和AI项目依赖
 
-# ============ 核心数据处理 ============
-numpy>=1.24.0
-pandas>=2.0.0
-scipy>=1.10.0
+# 数据处理
+pandas==2.1.4
+numpy==1.24.4
+pyarrow==14.0.1
+polars==0.20.2
 
-# ============ 大数据处理 ============
-# PySpark
-pyspark>=3.5.0
+# 大数据框架
+pyspark==3.5.0
+pyspark[sql]==3.5.0
+pyspark[ml]==3.5.0
+pyspark[streaming]==3.5.0
 
-# PyFlink
-apache-flink>=1.18.0
-py4j>=0.10.9
+# 流处理
+apache-flink==1.18.1
+kafka-python==2.0.2
+pulsar-client==3.4.0
 
-# ClickHouse
-clickhouse-driver>=0.2.6
-clickhouse-connect>=0.6.0
+# 机器学习
+scikit-learn==1.3.2
+tensorflow==2.15.0
+torch==2.1.1
+torchvision==0.16.1
+xgboost==2.0.2
+lightgbm==4.1.0
+catboost==1.2.2
 
-# ============ 机器学习 ============
-scikit-learn>=1.3.0
-xgboost>=2.0.0
-lightgbm>=4.1.0
-catboost>=1.2.0
-
-# ============ 深度学习 ============
-# TensorFlow
-tensorflow>=2.15.0
-tensorflow-recommenders>=0.7.3
-
-# PyTorch
-torch>=2.1.0
-torchvision>=0.16.0
-torchaudio>=2.1.0
-
-# ============ 推荐系统 ============
-# 协同过滤
-surprise>=1.1.3
-implicit>=0.7.0
+# 深度学习
+transformers==4.36.2
+datasets==2.15.0
+accelerate==0.25.0
+optuna==3.4.0
 
 # 特征工程
-featuretools>=1.28.0
-category-encoders>=2.6.0
+featuretools==1.30.0
+tsfresh==0.20.1
+category-encoders==2.6.3
 
-# ============ NLP ============
-transformers>=4.35.0
-sentence-transformers>=2.2.2
-jieba>=0.42.1
+# 模型服务化
+mlflow==2.8.1
+bentoml==1.1.8
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
 
-# ============ 模型服务化 ============
-# ONNX
-onnx>=1.15.0
-onnxruntime>=1.16.0
+# 数据存储
+pymongo==4.6.0
+redis==5.0.1
+elasticsearch==8.11.0
+influxdb-client==1.38.0
 
-# TensorFlow Serving (客户端)
-tensorflow-serving-api>=2.15.0
+# 数据可视化
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.17.0
+bokeh==3.3.2
+streamlit==1.28.2
 
-# ============ 数据可视化 ============
-matplotlib>=3.8.0
-seaborn>=0.13.0
-plotly>=5.18.0
+# 监控和日志
+prometheus-client==0.19.0
+structlog==23.2.0
+loguru==0.7.2
 
-# ============ 工具库 ============
-# 配置管理
-pyyaml>=6.0.1
-python-dotenv>=1.0.0
-
-# 日志
-loguru>=0.7.2
-
-# 进度条
-tqdm>=4.66.0
-
-# HTTP客户端
-requests>=2.31.0
-httpx>=0.25.0
-
-# ============ 数据库连接 ============
-# MySQL
-pymysql>=1.1.0
-sqlalchemy>=2.0.0
-
-# Redis
-redis>=5.0.0
-
-# MongoDB
-pymongo>=4.6.0
-
-# ============ 消息队列 ============
-kafka-python>=2.0.2
-pika>=1.3.0  # RabbitMQ
-
-# ============ 时间序列 ============
-prophet>=1.1.5
-statsmodels>=0.14.0
-
-# ============ 实验跟踪 ============
-mlflow>=2.8.0
-wandb>=0.16.0
-
-# ============ A/B测试 ============
-bayesian-optimization>=1.4.0
-
-# ============ 开发工具 ============
-# Jupyter
-jupyter>=1.0.0
-jupyterlab>=4.0.0
-ipython>=8.18.0
-
-# 代码质量
-black>=23.11.0
-flake8>=6.1.0
-mypy>=1.7.0
+# 工具库
+tqdm==4.66.1
+click==8.1.7
+pyyaml==6.0.1
+python-dotenv==1.0.0
+requests==2.31.0
+aiohttp==3.9.1
 
 # 测试
-pytest>=7.4.0
-pytest-cov>=4.1.0
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
 
-# ============ 其他 ============
-# 环境信息
-python-dateutil>=2.8.0
-pytz>=2023.3
+# Jupyter
+jupyter==1.0.0
+ipykernel==6.26.0
+nbconvert==7.12.0
 
+# 数据库
+sqlalchemy==2.0.23
+alembic==1.13.1
+psycopg2-binary==2.9.9
+pymysql==1.1.0
+
+# 配置管理
+hydra-core==1.3.2
+omegaconf==2.3.0
+
+# 分布式计算
+dask==2023.12.0
+ray==2.8.0
+celery==5.3.4
+
+# 时间序列
+prophet==1.1.4
+statsmodels==0.14.0
+arch==6.2.0
+
+# 推荐系统
+implicit==0.7.2
+surprise==1.1.3
+recbole==1.1.1
+
+# 自然语言处理
+nltk==3.8.1
+spacy==3.7.2
+textblob==0.17.1
+jieba==0.42.1
+
+# 计算机视觉
+opencv-python==4.8.1.78
+pillow==10.1.0
+albumentations==1.3.1
+
+# 图计算
+networkx==3.2.1
+igraph==0.11.3
+stellargraph==1.2.1
+
+# 模型解释
+shap==0.43.0
+lime==0.2.0.1
+eli5==0.13.0
+
+# 实验管理
+wandb==0.16.1
+neptune==1.9.0
+tensorboard==2.15.1
+
+# 部署相关
+docker==6.1.3
+kubernetes==28.1.0
+helm==3.13.3
+
+# 开发工具
+pre-commit==3.6.0
+isort==5.13.2
+bandit==1.7.5
+safety==2.3.5
